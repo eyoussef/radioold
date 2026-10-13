@@ -8,8 +8,6 @@
 world map, pick a decade, pick a mood, and travel through music. A clean-room
 alternative to [radiooooo.com](https://radiooooo.com).
 
-</div>
-
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/tag/eyoussef/radioold?label=release)](https://github.com/eyoussef/radioold/releases)
 ![minSdk 24](https://img.shields.io/badge/minSdk-24-red) ![compileSdk 37](https://img.shields.io/badge/compileSdk-37-blue) ![Kotlin](https://img.shields.io/badge/Compose%20%2F%20Media3-Kotlin-purple)
@@ -18,12 +16,42 @@ alternative to [radiooooo.com](https://radiooooo.com).
 |---|---|---|
 | **🎧 Background playback** | 🚕 Taxi mode — multi-stop journeys | 🔀 Fresh shuffle, every time |
 
+</div>
+
 ## Screenshots
 
 | Map & decades | Radio streaming | Taxi journey |
 |---|---|---|
 | ![Map](screenshots/1.jpg) | ![Player](screenshots/2.jpg) | ![Journey](screenshots/3.jpg) |
 | ![Track info](screenshots/4.jpg) | ![Station](screenshots/5.jpg) | ![Station 2](screenshots/6.jpg) |
+
+## Install
+
+Grab the signed APK from the
+[latest release](https://github.com/eyoussef/radioold/releases/latest), or install
+Radioold through your favourite GitHub app store:
+
+- [Komi Store](https://komistore.app/) — search "radioold"
+- [RepoStore](https://repostore.in/) — search "radioold"
+
+Or build it yourself (JDK 17+, Android SDK with platform 37):
+
+```bash
+git clone https://github.com/eyoussef/radioold.git
+cd radioold
+gradle :app:assembleRelease
+```
+
+> The release build comes out unsigned; sign it with your own keystore, or just
+> open the project in Android Studio and press **Run** to install it directly.
+
+## Usage
+
+1. Pick a **country** on the antique map (pinch to zoom, drag to pan).
+2. Pick a **decade** — 1900s through 2010s, plus **Now**.
+3. Pick a **mood** — Any / Slow / Fast / Weird.
+4. Press the wax seal to play. The music of that place and time streams in; the
+   player folds into a mini bar so the map stays full-screen.
 
 ## What it does
 
@@ -82,36 +110,9 @@ Kotlin + Jetpack Compose (Material 3), single module, manual DI.
 
 The `domain` layer is pure Kotlin (no Android imports) and unit-tested on the JVM.
 
-## Getting started
-
-Requirements: JDK 17+, Android SDK with **platform 37** (compileSdk 37).
-
 ```bash
-gradle :app:assembleDebug        # build the debug APK
 gradle :app:testDebugUnitTest    # run the JVM unit tests
 ```
-
-> **ARM64 hosts:** AGP 9 pulls an x86-64 `aapt2` from Maven that won't execute on
-> ARM. `gradle.properties` points `android.aapt2FromMavenOverride` at an ARM64
-> `aapt2`; the SDK build-tools `zipalign`/`aidl`/`split-select` must also be ARM64.
-
-## Install
-
-```bash
-git clone https://github.com/eyoussef/radioold.git
-cd radioold
-gradle :app:assembleDebug
-adb install app/build/outputs/apk/debug/app-debug.apk
-```
-
-or open the project in Android Studio and press **Run**.
-
-## Usage
-
-1. Pick a **country** on the antique map (pinch to zoom, drag to pan).
-2. Pick a **decade** — 1900s through 2010s, plus **Now**.
-3. Pick a **mood** — Any / Slow / Fast / Weird.
-4. Press the wax seal to play. The music of that place and time streams in; the player folds into a mini bar so the map stays full-screen.
 
 ## Tools
 

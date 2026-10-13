@@ -26,6 +26,7 @@ radiooooo_app.js
 
 # Signing secrets
 signing/radioold.keystore
+signing.properties
 app-release-aligned.apk
 radioold-v1.0.0.apk
 
