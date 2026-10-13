@@ -9,7 +9,7 @@
 
     <application
         android:label="Radioold"
-        android:icon="@android:drawable/ic_media_play"
+        android:icon="@mipmap/ic_launcher"
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.NoActionBar">

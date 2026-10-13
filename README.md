@@ -1,16 +1,28 @@
+<div align="center">
+
+<img src="icon.png" width="160" alt="Radioold app icon" />
+
 # Radioold — a musical time machine
+
+**An Android app that plays real music by place and time**: pick a country on the
+world map, pick a decade, pick a mood, and travel through music. A clean-room
+alternative to [radiooooo.com](https://radiooooo.com).
+
+</div>
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/tag/eyoussef/radioold?label=release)](https://github.com/eyoussef/radioold/releases)
 ![minSdk 24](https://img.shields.io/badge/minSdk-24-red) ![compileSdk 37](https://img.shields.io/badge/compileSdk-37-blue) ![Kotlin](https://img.shields.io/badge/Compose%20%2F%20Media3-Kotlin-purple)
 
-**An Android app that plays real music by place and time**: pick a country on
-the world map, pick a decade, pick a mood, and travel through music. A
-clean-room client for [radiooooo.com](https://radiooooo.com).
-
 | 🗺️ Antique world map | 🕰️ 1900s → 2010s | 🎭 Any / Slow / Fast / Weird |
 |---|---|---|
 | **🎧 Background playback** | 🚕 Taxi mode — multi-stop journeys | 🔀 Fresh shuffle, every time |
+
+## Screenshots
+
+| Map | Player | Taxi mode |
+|---|---|---|
+| ![Map](screenshots/1_map.png) | ![Player](screenshots/2_player.png) | ![Taxi](screenshots/3_taxi.png) |
 
 ## What it does
 

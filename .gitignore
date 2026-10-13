@@ -23,3 +23,11 @@ __pycache__/
 # Scraped radiooooo.com references (not to be published)
 radiooooo.html
 radiooooo_app.js
+
+# Signing secrets
+signing/radioold.keystore
+app-release-aligned.apk
+radioold-v1.0.0.apk
+
+# Generated icon masters
+icon_fg.png
