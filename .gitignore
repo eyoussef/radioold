@@ -1,0 +1,25 @@
+# Gradle / build outputs
+.gradle/
+build/
+/app/build/
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.iml
+local.properties
+
+# Catalog / map build artifacts (regenerate with tools/build_*.py)
+tools/.cache/
+tools/out/
+tools/assets/
+tools/appsrc/
+
+# Python
+__pycache__/
+*.pyc
+
+# Scraped radiooooo.com references (not to be published)
+radiooooo.html
+radiooooo_app.js
