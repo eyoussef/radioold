@@ -39,7 +39,7 @@ Or build it yourself (JDK 17+, Android SDK with platform 37):
 ```bash
 git clone https://github.com/eyoussef/radioold.git
 cd radioold
-gradle :app:assembleRelease
+./gradlew assembleRelease
 ```
 
 > The release build comes out unsigned; sign it with your own keystore, or just
@@ -111,7 +111,7 @@ Kotlin + Jetpack Compose (Material 3), single module, manual DI.
 The `domain` layer is pure Kotlin (no Android imports) and unit-tested on the JVM.
 
 ```bash
-gradle :app:testDebugUnitTest    # run the JVM unit tests
+./gradlew test    # run the JVM unit tests
 ```
 
 ## Tools
