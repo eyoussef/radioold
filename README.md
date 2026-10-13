@@ -20,9 +20,10 @@ alternative to [radiooooo.com](https://radiooooo.com).
 
 ## Screenshots
 
-| Map | Player | Taxi mode |
+| Map & decades | Radio streaming | Taxi journey |
 |---|---|---|
-| ![Map](screenshots/1_map.png) | ![Player](screenshots/2_player.png) | ![Taxi](screenshots/3_taxi.png) |
+| ![Map](screenshots/1.jpg) | ![Player](screenshots/2.jpg) | ![Journey](screenshots/3.jpg) |
+| ![Track info](screenshots/4.jpg) | ![Station](screenshots/5.jpg) | ![Station 2](screenshots/6.jpg) |
 
 ## What it does
 
