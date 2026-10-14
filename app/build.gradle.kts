@@ -18,25 +18,10 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
 
-    signingConfigs {
-        create("release") {
-            val f = rootProject.file("signing.properties")
-            if (f.exists()) {
-                val props = Properties()
-                f.inputStream().use { props.load(it) }
-                storeFile = rootProject.file(props.getProperty("storeFile"))
-                storePassword = props.getProperty("storePassword")
-                keyAlias = props.getProperty("keyAlias")
-                keyPassword = props.getProperty("keyPassword")
-            }
-        }
-    }
-
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("release").takeIf { it.storeFile != null }
         }
     }
 
